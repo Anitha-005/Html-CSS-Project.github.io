@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CourseRsgitrationForm</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Personal details</legend>
+        <table>
+            <tr><td><label>First Name</label></td><td><input type="text" placeholder="Ex:Rohit" name="name"></td></tr>
+            <tr><td><label>Surname</label></td><td><input type="text" placeholder="Ex:Ravinder" name="surname"></td></tr>
+            <tr><td><label>Mobile number</label></td><td><input type="tel" placeholder="Ex:987-897-0987" name="mobilenumber"></td></tr>
+            <tr><td><label>Email</label></td><td><input type="email" placeholder="Ex:rohit@gmail.com" name="email"></td></tr>
+            <tr><td><label>Password</label></td><td><input type="password" placeholder="min 5 characters" name="password" minlength="5"></td></tr>
+            <tr><td><label>Confirm Password</label></td><td><input type="Confirm Password" placeholder="min 5 characters" name="confirmpassword" minlength="5"></td></tr>
+            <tr><td>DOB</td><td><input type="date" name="date"></td></tr>
+            <tr><td><label>Gender</label></td><td><input type="radio" name="gender" value="male">Male<input type="radio" name="gender" value="female">Female<input type="radio" name="gender" value="custom">Custom</td></tr>
+            <tr><td><label>Select Country</label></td>
+                <td><select name="select">
+                    <option value="india">INDIA</option>
+                    <option value="china">CHINA</option>
+                    <option value="usa">USA</option>
+                </select></td></tr>
+            <tr><td><label>Upload Picture</label></td><td><input type="file" name="choose"></td></tr>
+            <tr><td><input type="reset"></td></tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Course Details</legend>
+        <label>Select Course</label><br>
+        <select name="option">
+            <option value="pfs">Python Full Stack</option>
+            <option value="jfs">Java Full stack</option>
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+        </select><br>
+        <label>Delivery Mode</label><input type="checkbox">ONLINE<input type="checkbox">OFFLINE<br>
+        <label>Comments</label><br>
+        <textarea rows="4" cols="40"></textarea>
+    </fieldset>
+</body>
+</html>
